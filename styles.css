@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif, system-ui;
+  box-sizing: border-box;
+}
+/* Hacer cambios para que la pagina funcione bien en celulares tmbn*/
+.container {
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  background: linear-gradient(0deg, rgba(255, 123, 0, 0.747), rgb(50, 0, 155));
+}
+
+.toDoApp {
+  width: 100%;
+  max-width: 540px;
+  background-color: rgb(223, 225, 253);
+  margin: 100px auto;
+  padding: 30px 30px 70px;
+  border-radius: 8px;
+}
+
+.toDoApp h2 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.toDoApp h2 svg {
+  margin-left: 3px;
+}
+
+.userInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 25px;
+  padding-left: 10px;
+  margin-bottom: 25px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 10px 50px;
+  background: rgb(50, 0, 155);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 0px 25px 25px 0px;
+  cursor: pointer;
+  box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.63);
+}
+
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 8px 45px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  height: 28px;
+  width: 28px;
+  background-image: url(/images/circle.png);
+  background-size: cover;
+  background-position: center;
+  top: 8px;
+  left: 8px;
+}
+
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(/images/circle-check.png);
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 26px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+ul li span:hover {
+  background: rgba(255, 0, 0, 0.479);
+}
