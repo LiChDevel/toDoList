@@ -1,7 +1,7 @@
 const inputBox = document.getElementById("inputBox");
 const taskList = document.getElementById("taskList");
 
-function addTask() {
+function addTask() { //revisar por qu[e no se esta llamando correctamente a esta funcion
   if (inputBox.value === "") {
     alert("Let's add some text to your task first");
   } else {
