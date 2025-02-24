@@ -1,6 +1,8 @@
 const inputBox = document.getElementById("inputBox");
 const taskList = document.getElementById("taskList");
-//creat const button
+const addButton = document.getElementsByTagName("button");
+
+addButton[0].addEventListener("click", addTask);
 
 function addTask() { //revisar por qu[e no se esta llamando correctamente a esta funcion
   if (inputBox.value === "") {
